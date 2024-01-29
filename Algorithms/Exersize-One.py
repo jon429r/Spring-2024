@@ -11,7 +11,7 @@ def smallestNum(arr):
     return smallest
 
 def subsetOf(arr):
-    """Prints out all the subsets of three elements of a set of n elements"""
+    """2. Prints out all the subsets of three elements of a set of n elements"""
     n = len(arr)
 
     if n < 3:
@@ -35,7 +35,7 @@ def subsetOf(arr):
 
     
 def insertionSort(arr):
-    """Discuss and write the insertions sort algorithm
+    """3. Discuss and write the insertions sort algorithm
     
     Discussion: The insertion sort algorithm starts at the first element
     in an array. It uses 2 pointers on of which follows keeps track of the
@@ -55,7 +55,7 @@ def insertionSort(arr):
     return arr
 
 def GCD(n1, n2):
-    """Write an algorithm to find the greatest common divisor of two integers"""
+    """4. Write an algorithm to find the greatest common divisor of two integers"""
     n1Divisors = []
     n2Divisors = []
     for i in range(2, math.floor(n1/2)):
@@ -87,13 +87,13 @@ def main():
     testArray = [5, 3, 1, 2, 4]
     intArray = [random.randint(1, 1000) for i in range(100)]
 
-    #smallest = smallestNum(intArray)
-    #print(f'Smallest in array: {smallest}')
+    smallest = smallestNum(intArray)
+    print(f'Smallest in array: {smallest}')
 
-    #sortedArr = insertionSort(intArray)
-    #print(sortedArr)
+    sortedArr = insertionSort(intArray)
+    print(sortedArr)
 
-    #print(GCD(24, 18))
+    print(GCD(24, 18))
 
     subsetOf([1,2,3,4,5])
 
