@@ -1,0 +1,22 @@
+Chapter 1: # 15, 16, 17, 20, 27a,b
+
+15. Show directly that f(n) = n2 + 3n3 ∈ Θ(n3). That is, use the definitions of O and Ω to show that f(n) is in both O(n3) and Ω(n3).
+
+16. Using the definitions of O and Ω, show that:
+6n2 + 20n ∈ Θ(n3) but 6n2 + 20n !∈ Ω(n3)
+
+17. Using the Properties of Order in Section 1.4.2, show that:
+5n5 + 4n4 + 6n3 + 2n2 + n + 7 ∈ Θ(n3)
+
+
+20.The function f(x)=(logn)2 +2n+4n+logn+50 belongs in which of the following complexity categories:
+(a) θ(lg n)
+(b) θ((log n)2) 
+(c) θ(n)
+(d) θ(n lg n)
+(e) θ(n(lg n)2)
+(f) None of these
+
+27. Show the correctness of the following statements.
+(a) lg n ∈ O (n)
+(b) n ∈ O (n lg n)
