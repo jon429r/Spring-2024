@@ -2,6 +2,8 @@ Chapter 1: # 15, 16, 17, 20, 27a,b
 
 15. Show directly that f(n) = n2 + 3n3 ∈ Θ(n3). That is, use the definitions of O and Ω to show that f(n) is in both O(n3) and Ω(n3).
 
+Answer: The greatest exponent in the given function is 3, in 3n^3. When calculating the order, also known as the worst-case time complexity, all we care about is the greatest power. The best case or omega is still Ω(n3) because it doesn't matter what your input for f(n) is as it approches infinity it will approch the graph of n3.
+
 16. Using the definitions of O and Ω, show that:
 6n2 + 20n ∈ Θ(n3) but 6n2 + 20n !∈ Ω(n3)
 
@@ -9,9 +11,12 @@ Chapter 1: # 15, 16, 17, 20, 27a,b
 5n5 + 4n4 + 6n3 + 2n2 + n + 7 ∈ Θ(n3)
 
 
-20.The function f(x)=(logn)2 +2n+4n+logn+50 belongs in which of the following complexity categories:
+20.The function f(x)=(logn)^2 +2n+4n+logn+50 belongs in which of the following complexity categories:
+
+Answer: B θ((log n)2)
+
 (a) θ(lg n)
-(b) θ((log n)2) 
+(b) θ((log n)2)
 (c) θ(n)
 (d) θ(n lg n)
 (e) θ(n(lg n)2)
