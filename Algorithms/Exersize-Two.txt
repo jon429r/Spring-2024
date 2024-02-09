@@ -2,13 +2,13 @@ Chapter 1: # 15, 16, 17, 20, 27a,b
 
 15. Show directly that f(n) = n2 + 3n3 ∈ Θ(n3). That is, use the definitions of O and Ω to show that f(n) is in both O(n3) and Ω(n3).
 
-Answer: The greatest exponent in the given function is 3, in 3n^3. When calculating the order, also known as the worst-case time complexity, all we care about is the greatest power. The best case or omega is still Ω(n3) because it doesn't matter what your input for f(n) is as it approches infinity it will approch the graph of n3.
+Answer: In order to prove this, we need to show that c*n^3 <= n2 + 3n3 <= c*n^3.
+n^2+3n^3 <= 4n^3 for n>=1 and C=4. Therefore f(n) ∈ O(n^3). n^2+3n^3 >= n^3 for n>=1 and C=1. Therefore c*n^3 <= n2 + 3n3 <= c*n^3.
 
 16. Using the definitions of O and Ω, show that:
-6n2 + 20n ∈ Θ(n3) but 6n2 + 20n !∈ Ω(n3)
+6n2 + 20n ∈ Θ(n3) but 6n2 + 20n not ∈ Ω(n3)
 
-17. Using the Properties of Order in Section 1.4.2, show that:
-5n5 + 4n4 + 6n3 + 2n2 + n + 7 ∈ Θ(n3)
+Answer: 6n^2 + 20n ∈ O(n^3) is true because when C = 26 and N=1, 6n^2+20n <= 26n^3. Therefore, 6n^2+20n is in O(n^3). To show that 6n^2+20n is not in Ω(n^3), I need to show that for any constant C and N, there exist values such that 6n^2+20n >= n^3. There are no values that exist that satisfy this since n^3 grows much faster than 6n^2. 
 
 
 20.The function f(x)=(logn)^2 +2n+4n+logn+50 belongs in which of the following complexity categories:
@@ -24,4 +24,10 @@ Answer: B θ((log n)2)
 
 27. Show the correctness of the following statements.
 (a) lg n ∈ O (n)
+Answer: logn grows slower than n, so logn is in the set of functions that belongs to O(n).
+
 (b) n ∈ O (n lg n)
+Answer: n grows slower than nlogn so n is in the set of functions that belongs to O(n log n).
+
+
+
