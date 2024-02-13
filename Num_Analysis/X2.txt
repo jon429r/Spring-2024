@@ -1,0 +1,29 @@
+Exploration 2.1.8:
+Given the conditions for a problem to be well-posed, which is more desirable:
+for the forward error to be larger, smaller, or of a similar magnitude to the
+backward error? Explain your reasoning.
+
+Exploration 2.1.9:
+Let f(x) = ex, g(x) = e−x, and x0 = 2. Suppose that the relative backward 
+error in x0 satisfies |Δx0/x0| = |x̂0 −x0|/|x0| ≤ 10−2. Use the condition 
+number to estimate the relative forward error in f(x0) and g(x0). Use MATLAB 
+or a calculator to experimentally confirm that this estimate is valid, by 
+evaluating f(x) and g(x) at selected points and comparing values.
+
+Exploration 2.1.14:
+Use both of the formulas from Exploration 2.1.13 to compute approximations 
+of f′(x0), with f(x) = sin x, x0 = 1, and h = 10−1, 10−2, 10−3, and then 
+h = 10−14. What should the result be? What happens, and can you explain why?
+
+Exploration 2.2.2:
+What is the largest possible mantissa in a system with β = 10 and p = 5? 
+What if β = 2 and p = 10? Express this value as both a sequence of binary 
+digits, and as a decimal.
+
+Exploration 2.2.4:
+Assume that d0 ≠ 0. What is the exponent for the following numbers in 
+the given floating-point number systems? Hint: Use the result of 
+Exploration 2.2.3. 
+1. x = 234597.34, β = 10 2. x = 0.00000178, β = 10 
+3. x = 998, β = 2 4. x = 0.01, β = 2
+
