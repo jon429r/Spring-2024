@@ -3,12 +3,18 @@ Given the conditions for a problem to be well-posed, which is more desirable:
 for the forward error to be larger, smaller, or of a similar magnitude to the
 backward error? Explain your reasoning.
 
+Answer: forward error smaller. primary concern is forward error.
+Forward error <= Backward error
+
 Exploration 2.1.9:
 Let f(x) = ex, g(x) = e−x, and x0 = 2. Suppose that the relative backward 
 error in x0 satisfies |Δx0/x0| = |x̂0 −x0|/|x0| ≤ 10−2. Use the condition 
 number to estimate the relative forward error in f(x0) and g(x0). Use MATLAB 
 or a calculator to experimentally confirm that this estimate is valid, by 
 evaluating f(x) and g(x) at selected points and comparing values.
+
+Answer: f(x)=e^x:  K = 2, K= |x*f'x / fx| forward <= 2*1/100 = 1/50 = 0.02
+f(x) = e^-x: 
 
 Exploration 2.1.14:
 Use both of the formulas from Exploration 2.1.13 to compute approximations 
