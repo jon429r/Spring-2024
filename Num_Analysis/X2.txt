@@ -1,35 +1,35 @@
 Exploration 2.1.8:
-Given the conditions for a problem to be well-posed, which is more desirable:
-for the forward error to be larger, smaller, or of a similar magnitude to the
-backward error? Explain your reasoning.
 
-Answer: forward error smaller. primary concern is forward error.
-Forward error <= Backward error
+Answer: We would like the forward error to be smaller than the backward error. This is because
+our primary goal is to find the forward error. We also want the forward error to be less than
+or equal to the backward error.
 
 Exploration 2.1.9:
-Let f(x) = ex, g(x) = e−x, and x0 = 2. Suppose that the relative backward 
-error in x0 satisfies |Δx0/x0| = |x̂0 −x0|/|x0| ≤ 10−2. Use the condition 
-number to estimate the relative forward error in f(x0) and g(x0). Use MATLAB 
-or a calculator to experimentally confirm that this estimate is valid, by 
-evaluating f(x) and g(x) at selected points and comparing values.
 
 Answer: f(x)=e^x:  K = 2, K= |x*f'x / fx| forward <= 2*1/100 = 1/50 = 0.02
-f(x) = e^-x: 
+f(x) = e^-x:
+g(x)=e^(-x): K = 2, K= |x*g'x / gx| forward <= 2*1/100 = 1/50 = 0.02 
+
+according to julia relative forward error for f(x) and g(x) is 0.02
 
 Exploration 2.1.14:
-Use both of the formulas from Exploration 2.1.13 to compute approximations 
-of f′(x0), with f(x) = sin x, x0 = 1, and h = 10−1, 10−2, 10−3, and then 
-h = 10−14. What should the result be? What happens, and can you explain why?
+
+Answer: f'(x_0) = (f(x_0 + h) - f(x_0))/h = (sin(1 + h) - sin(1))/h = cos(1)
+f'(x_0) = (f(x_0 + h) - f(x_0 - h))/2h = (sin(1 + h) - sin(1 - h))/2h = cos(1)
+
+Ideally, the results of both formulas should be close to cos(1) since f(x) = sin(x) and f'(x) = cos(x).
 
 Exploration 2.2.2:
-What is the largest possible mantissa in a system with β = 10 and p = 5? 
-What if β = 2 and p = 10? Express this value as both a sequence of binary 
-digits, and as a decimal.
+
+Answer: m = d_0*10^-0 + d_1*10^-1 + d_2*10^-2 + d_3*10^-3 + d_4*10^-4 = 0.99999
+m = d_0*2^-0 + d_1*2^-1 + d_2*2^-2 + d_3*2^-3 + d_4*2^-4 + d_5*2^-5 + d_6*2^-6 + d_7*2^-7 + d_8*2^-8 + d_9*2^-9 = 0.9999999998
+
+.99999 = 0.111111111_2
+.9999999998 = 0.1111111111_2
 
 Exploration 2.2.4:
-Assume that d0 ≠ 0. What is the exponent for the following numbers in 
-the given floating-point number systems? Hint: Use the result of 
-Exploration 2.2.3. 
-1. x = 234597.34, β = 10 2. x = 0.00000178, β = 10 
-3. x = 998, β = 2 4. x = 0.01, β = 2
 
+Answer 1: m * 10^e = 2.3459734 * 10^5. The exponent is 5 since the decimal point was moved 5 places to the left to get the mantissa in the form 0.23459734 * 10^6.
+Answer 2: m * 10^e = 1.78 * 10^-6. The exponent is -6 since the decimal point was moved 6 places to the right to get the mantissa in the form 0.00000178 * 10^0.
+Answer 3: m * 2^e = 1.1111100110 * 2^9. The exponent is 9 since the decimal point was moved 9 places to the left to get the mantissa in the form 0.1111100110 * 2^18.
+Answer 4: m * 2^e = 1.0001 * 2^-3. The exponent is -3 since the decimal point was moved 3 places to the right to get the mantissa in the form 0.0001 * 2^0.
