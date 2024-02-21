@@ -52,7 +52,7 @@ a)/projects/shared/code/common/config/settings.ini
 
 b)/dataset.txt
 
-c)
+c)/../../user/alice/pictures/vacations/mountains/everest.jpg
 
 d)/archive/backup/reports/reports1.pdf
 
