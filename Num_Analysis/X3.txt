@@ -2,18 +2,86 @@ Explorations:
 
 2.2.7
 
+Answer: 
+
+239487.234 = 2.39487234 * 10^5 in scientific notation
+m = 0.239487234 E = 5
+
+0.0000000034394 = 3.4394 * 10^-9 in scientific notation
+m = .34394 E = -9
+
+p = 10 since both examples need a percision of 10 or less
+[L, U] = -9, 5, since the lowest exponent is -9 and the highest is 5 needed to represent both examples
 
 2.2.8
 
+Answer:
+
+To get this answer we must calculate the under flow and overflow according to the book the formulas are:
+UFL = m_min * B^L
+OFL = B^U+1 * (1 - B^-p)
+
+B = 10, p = 5, L = - 20, U = 20
+
+Smallest positive number is approximatly: 1 * 10^-20 = 10^-20 = 0.000000000000000000001
+Largest positive number is approximatly: 10^20+1 * (1 - 10^-5) = 10^20 * (1 - 0.00001) = 10^20 * 0.99999 = 99999000000000000000000
+
+How would you describe these values for a general floating-point system with base 10: 
+The largest and smallest values for a general floating-point system with base 10 is equal to
+10^L and 10^U. The range of [L, U] is the range of exponents that can be used to represent the numbers in a number
+system. 
 
 2.2.17
 
+Answer:
+
+The answer is that if the numbers are odered from smallest to largest it will be more accurate.
+For my reasoning I wrote some code in julia to test this:
+
+```julia
+n=100
+numbers = [.01 * i for i in 1:n];
+sum_small_to_large = sum(numbers)
+sum_large_to_small = sum(reverse(numbers))
+
+println("Sum of numbers from smallest to largest: ", sum_small_to_large)
+println("Sum of numbers from largest to smallest: ", sum_large_to_small)
+```
+
+output: 
+50.5000000000001
+50.5
+
+The output shouws that the sum of the numbers from smallest to largest is more accurate than the sum of
+the numbers from largest to smallest.
 
 2.2.23
 
+Answer:
+
+Results start to differ between the too formulas at at n = 10^9 to 10^11, I beleive this is becuase 
+the mean of x squared happens outside of the parethesis. This seems to reduce some roundoff error.
 
 2.2.25
 
+Answer:
+
+When x is close to 1, 1-x becomes very small and when x is close to -1 1+x becomes very small.
+Subtracting a very small number can lead to percision error.
+
+To resolve this error we can change formula to avoid subtracting a very small number from another.
+
+we can combine the two fractions into one fraction a simplify:
+
+1/(1-x)-1/(1+x) = (1+x)-(1-x)/(1-x)(1+x) = 2x/(1-x^2)
+
+With this new formula x would need to be even closer to 1 or -1 to cause a percision error.
 
 2.2.26
 
+Answer:
+
+The right side of the equation is able to be evaluated more accurately than the left side
+That is because x^2 - y^2 requires the squaring of two numbers which has the posibality of
+causing percision error. The right side only requires multiplication once which is less likely to
+cause an error.  
