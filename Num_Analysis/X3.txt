@@ -17,14 +17,11 @@ p = 10 since both examples need a percision of 10 or less
 
 Answer:
 
-To get this answer we must calculate the under flow and overflow according to the book the formulas are:
-UFL = m_min * B^L
-OFL = B^U+1 * (1 - B^-p)
-
 B = 10, p = 5, L = - 20, U = 20
 
-Smallest positive number is approximatly: 1 * 10^-20 = 10^-20 = 0.000000000000000000001
-Largest positive number is approximatly: 10^20+1 * (1 - 10^-5) = 10^20 * (1 - 0.00001) = 10^20 * 0.99999 = 99999000000000000000000
+Smallest positive number is: 1.0 * 10^-24 
+Largest positive number is: 9.9999 * 10^20 
+
 
 How would you describe these values for a general floating-point system with base 10: 
 The largest and smallest values for a general floating-point system with base 10 is equal to
