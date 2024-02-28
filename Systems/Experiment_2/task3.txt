@@ -1,17 +1,10 @@
 This is an example file for practicing Vi commands.
 It contains multiple lines of text to manipulate.
-Linux is an open-source operating system.
-Unix and Linux are popular choices for server environments.
 Vi is a powerful text editor used in Unix-like systems.
 Editing text files using Vi requires proficiency.
 The Vi editor offers a wide range of commands and features.
-It is essential for Linux users to master Vi for efficient editing.
-This file serves as a practice ground for Vi commands.
-Linux commands are integral to system administration tasks.
-Regular practice with Vi will enhance your productivity.
-
-Vi commands can be complex but are highly efficient once mastered.
-Navigating within a file using Vi is done using keystrokes.
+It is essential for Unix users to master Vi for efficient editing.
+This 10,15m$file serves as a practice ground for Vi commands.
 Inserting text in Vi is straightforward once you get the hang of it.
 The 'u' command in Vi allows for undoing changes made to the file.
 Copying and pasting text in Vi involves using the 'y' and 'p' commands.
@@ -22,13 +15,11 @@ Advanced Vi users utilize features like macros, registers, and marks to expedite
 
 With practice and dedication, you can become proficient in using Vi for all your text editing needs!
 
-Linux-based operating systems are known for their stability and security.
-Many software applications are developed and deployed on Linux servers.
 Unix philosophy emphasizes the use of small, modular tools that work well together.
-Administrators often use command-line interfaces on Unix and Linux systems for efficiency.
-Open-source communities contribute to the ongoing development and improvement of Linux distributions.
-Learning Unix and Linux commands is valuable for both sysadmins and developers.
 The command-line interface provides powerful capabilities for managing and automating tasks.
-Shell scripting is a fundamental skill for Unix and Linux users to automate repetitive tasks.
-Understanding file permissions and ownership is essential for securing Unix and Linux systems.
-Networking tools and utilities are abundant in Unix and Linux environments for network troubleshooting.
+Unix commands are integral to system administration tasks.  Jonathan Day
+Regular practice with Vi will enhance your productivity.
+
+Vi commands can be complex but are highly efficient once mastered.
+Navigating within a file using Vi is done using keystrokes.
+:Operating System Unix
