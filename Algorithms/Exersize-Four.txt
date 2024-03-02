@@ -1,0 +1,29 @@
+Pages 654 # 19b, 20a-d, 21, 24a, 25a
+
+19b
+
+answer: N^2
+
+20a-d.
+
+answer a: t_n = C*4^n
+answer b: 
+answer c:
+answer d:
+
+21.
+
+answer a: N^3 is a strictly increasing function becuase its derivative 
+which is 3N^2 is always positive.
+answer b: g (n) = 2n3 − 6n2 is an eventually nondecreasing function becuase
+its derivative is 6n^2 - 12n which is always positive for n > 2.
+
+24a.
+
+answer: a < b^k for all k, since 2 < 5^3. Because of the rule that T(n) = O(n^k) if a<b^k,
+we can say that T(n) = O(n^3).
+
+25a.
+
+answer:  a>b^k , since 14 > 5^1. Because of the rule that T(n) = 0(n^log)_b(a) if a>b^k,
+we can say that T(n) = O(n^log_5(14)).
