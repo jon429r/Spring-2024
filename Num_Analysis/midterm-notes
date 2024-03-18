@@ -1,0 +1,126 @@
+Error analysis
+
+data error, error in an of the imput data
+discretization error, arses from approximating continuous functions by sets of discrete data points
+truncation error, arises from turncating a sequence of approximations that is meant to converge to the exact solution
+roundoff error, Due to the fact te computers represent real numbers approximately
+
+Julia
+
+Chapter 2
+Understanding Error
+
+Numerical analysis can be considered the study of error
+well posed problem, A solution exists, the solution is unique, a small change in input leads to a small change in output
+
+data error
+computational error, error that occurs when attempting to comput f(approxamate x). includes discretiztation, trucation and roundoff
+
+abs error = |approx y - y|
+better if y is very large else can be misleading
+
+rel error = |(approx y - y) / y|
+is a percetage of |y|
+
+x = 4.567 x 10^-1 + 0.008530 x 10^-1 = 4.6524
+approx x = 4.652 x 10^-1
+abs error = 0.4652 - 0.46523 = -3 x 10^-5
+rel error = 0.4652 - 0.46523 / 0.46523 = -6.5756 x 10^-5
+
+Forward and backward error
+
+Forward error:
+for y=f(x), forward error in aprrox y is the difference y delta = approx y - y or
+delta y / y = approx y - y / y
+
+Backward error:
+for y = f(x), backward error in approx y is
+delta x / x = aprrox x - x / x
+
+Forward error is the difference between the approximate solution and true solution
+backward error is approximating the change in x
+
+The absolute condition number is the ration of the magnitude of the worward error to the mangitude of the backward error
+kabs = |aprrox f(x) - f(x)| / |(approx x - x) / x| = |delta y / y| / |delta x / x|
+
+Relitive condition number estimate = |xf'(x) / f(x)|
+We use this to estimate the condition number when the exact solution is not known
+
+Stable algorithm, an algorithm appled to a given problem with given data x is said to be stable if it comptus an approximate solution that is the exact solution of the same problem with data approx x, where approx x is a small perturbation of x
+algorithms which avoid magnifing small approximation errors
+
+if a problem is weel conditioned and stable the computed solution is considered accurate
+
+rate of convergence as h -> 0 or h -> infinity
+
+Chapter 2.2
+Computer Arithmetic
+
+Roundoff error
+happens because real numbers can only be represented using a finite number of digits
+
+precision, computers can represent numbers with a fixed number of digits called precision
+
+2.2.1 Floating point representation
+
+x = sign * m * B^E
+
+2.2.1.1 overflow and underlow
+
+underflow level, the smallest positive number in a floating point system
+overflow level, the largest positive number in a floating point system
+
+2.2.1.2 Normalization
+
+normalization, specifying the leading digit of the mantissa be nonzero, therefore it is not needed in storage
+
+2.2.1.3 Rounding
+
+chopping or rounding to zero, end is rounded to zero
+rounding to nearest, rounds to the  losest x in value
+roundinng to even, rounded to the nearest even number
+8.5 to 8, 9.5 to 10
+
+2.2.1.4 Machine precision
+
+Machine precision, |fl(x) - x / x| <= u, u is machine precision
+error caused by rounding
+
+2.2.1.5 The IEEE floating point standard
+single precision, 4 bytes, 23 mantissa, 8 exponent, one sign, p = 24
+double precision, 8 bytes, 52 mantissa, 11 exponent, 1 sign, p = 53, UFL 2^-1023
+OFL 2^1025(1-2^-53), exp range -1023 <= E <= 1024, u = 2^-53
+
+2.2.2 Issues with floating point arithmetic
+
+2.2.2.1 Loss of precision
+
+loss of precision in operations using machine number
+
+2.2.2.2 violation of arithmetic rules
+
+floating point arithmetic is commutattive but it is not associative
+
+2.2.2.3 Overflow and underflow
+
+Overflow or underflow may occur if product lies outside of interval [L, U]
+
+2.2.2.4 Cancellation
+
+If the operands differ by less than u, the result contains no correct digits
+this is know as catastrophic cancellation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
