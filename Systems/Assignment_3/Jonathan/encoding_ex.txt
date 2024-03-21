@@ -1,0 +1,54 @@
+Q1: Utilize LZW compression algorithm to compress the string “EFGFGFGEF”, calculate the
+compression ratio, then decompress it. Please present both the answers and the calculation
+processes. It's essential to note that only the final answers will incur a deduction of half points. (20 points)
+
+Dict: 0: E, 1: F, 2: G, 3: FG
+
+0 3 3 3 0 1
+
+Ratio: 9 / 6 = 1.5
+
+Decompressed: EFGFGFGEF
+
+Q2: Utilize LZW compression algorithm to compress the string “EGFGFEGEGEGF”, calculate the
+compression ratio, then decompress it. Please present both the answers and the calculation
+processes. It's essential to note that only the final answers will incur a deduction of half points. (20 points)
+
+Dict: 0: E, 1: F, 2: G, 3: FG
+
+0 3 3 3 0 1
+
+Ratio: 12 / 6 = 2
+
+Decompressed: EFGFGFGEF
+
+
+Q3: Utilize Huffman Coding algorithm to compress the string “AAABBCBBCDEFFEADEEEFDDF”,
+calculate the compression ratio, then decompress it. Please present both the answers and the
+calculation processes. It's essential to note that only the final answers will incur a deduction of half
+points. (15 points)
+
+Frequency Dict: A: 4, B: 4, C: 2, D: 4, E: 6, F: 5
+
+A: 11, B: 10, C: 010, D: 00, E: 11, F: 01
+
+Compression output: 1111110101010101000000010100111101111000
+
+Ratio: 24 * 8 bits per char /40 bits: 4.8
+
+Decompressed: AAABBCBBCDEFFEADEEEFDDF
+
+
+Q4: Utilize Huffman Coding algorithm to compress the string “EFGHJJHGFEEFEFHJHJHO”, calculate the
+compression ratio, then decompress it. Please present both the answers and the calculation
+processes. It's essential to note that only the final answers will incur a deduction of half points. (15 points)
+
+Frequency: E: 4, F: 4, G: 2, H: 4, J: 4, O: 1
+
+E: 11, F: 10, G: 010, H: 00, J: 01, O: 011
+
+Compression output: 1111110101010101000000010100111101111000
+
+Ration: 24 * 8 bits per char /40 bits: 4.8
+
+Decompressed: EFGHJJHGFEEFEFHJHJHO
