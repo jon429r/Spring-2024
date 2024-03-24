@@ -1,6 +1,6 @@
 """# 18, 19, 21, 22, 25, 26, 27, 28, 32, 34, 35"""
 # Best 8 out of 11
-# Completion status: 7/11
+# Completion status: 8/11
 
 # 18
 
@@ -43,18 +43,32 @@ matrices. Verify the correctness of this product.
 """
 
 """
-m1 = (a11 + a22)(b11 + b22)
-m2 = (a21 + a22)b11
-m3 = a11(b12 - b22)
-m4 = a22(b21 - b11)
-m5 = (a11 + a12)b22
-m6 = (a21 - a11)(b11 + b12)
-m7 = (a12 - a22)(b21 + b22)
+m1 = (A[0][0] + A[1][1]) * (B[0][0] + B[1][1])
+m2 = (A[1][0] + A[1][1]) * B[0][0]
+m3 = A[0][0] * (B[0][1] - B[1][1])
+m4 = A[1][1] * (B[1][0] - B[0][0])
+m5 = (A[0][0] + A[0][1]) * B[1][1]
+m6 = (A[1][0] - A[0][0]) * (B[0][0] + B[0][1])
+m7 = (A[0][1] - A[1][1]) * (B[1][0] + B[1][1])
+
 
 If A = [2 4; 1 3] and B = [5 7; 6 8]
 
-C = [(2*5 + 4*6) (2*7 + 4*8); (1*5 + 3*6) (1*7 + 3*8)]
-C = [34 46; 23 31]
+m1 = (2 + 3) * (5 + 8) = 5 * 13 = 65
+m2 = (1 + 3) * 5 = 4 * 5 = 20
+m3 = 2 * (7 - 8) = 2 * -1 = -2
+m4 = 3 * (8 - 5) = 3 * 3 = 9
+m5 = (2 + 4) * 8 = 6 * 8 = 48
+m6 = (1 - 2) * (5 + 7) = -1 * 12 = -12
+m7 = (4 - 3) * (6 + 8) = 1 * 14 = 14
+
+C[0][0] = 65 + 9 - 48 + 14 = 40
+C[0][1] = -2 + 48 = 46
+C[1][0] = 20 + 9 = 29
+C[1][1] = 65 - 20 - 2 - 12 = 31
+
+C = [40 46; 29 31]
+
 """
 
 # 27: Complete
@@ -115,9 +129,47 @@ print(ExchangeSort([4,10,3,5,1,2,6,9,2,9]))
 print(ExchangeSort([100, 34,23,30,76, 11,35,56]))
 
 
-# 35
+# 35: Complete
 """
 Implement both the standard algorithm and Strassen’s algorithm on your computer to 
 multiply two n × n matrices (n = 2k). Find the lower bound for n that justifies 
 application of Strassen’s algorithm with its overhead.
+"""
+
+def standard_algo(A, B):
+    C = [[0 for i in range(len(A))] for j in range(len(B[0]))]
+    for i in range(len(A)):
+        for j in range(len(B[0])):
+            for k in range(len(B)):
+                C[i][j] += A[i][k] * B[k][j]
+    return C
+
+def Strassens_algo(A, B):
+    C = [[0 for i in range(len(A))] for j in range(len(B[0]))]
+    m1 = (A[0][0] + A[1][1]) * (B[0][0] + B[1][1])
+    m2 = (A[1][0] + A[1][1]) * B[0][0]
+    m3 = A[0][0] * (B[0][1] - B[1][1])
+    m4 = A[1][1] * (B[1][0] - B[0][0])
+    m5 = (A[0][0] + A[0][1]) * B[1][1]
+    m6 = (A[1][0] - A[0][0]) * (B[0][0] + B[0][1])
+    m7 = (A[0][1] - A[1][1]) * (B[1][0] + B[1][1])
+    C[0][0] = m1 + m4 - m5 + m7
+    C[0][1] = m3 + m5
+    C[1][0] = m2 + m4
+    C[1][1] = m1 - m2 + m3 + m6
+    return C
+
+
+A = [[2, 4], [1, 3]]
+B = [[5, 7], [6, 8]]
+C = [[0, 0], [0, 0]]
+
+print(f' C: {standard_algo(A, B)}')
+print(f' C: {Strassens_algo(A, B)}')
+
+"""
+The lower bound for n that justifies the application of 
+Strassen's algorithm is 64. In practice Strassen's algorithm
+tends to outperform the standard algorithm when the size
+of the matrix is 64 or greater.
 """
