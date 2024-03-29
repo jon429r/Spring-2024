@@ -113,7 +113,7 @@ function solveAxb(A, b)
     # Check dimensions
     n, m = size(A)
     if n != m || n != length(b)
-        error("Matrix A and vector b must have compatible dimensions.")
+      error("Matrix must be square")
     end
     
     # LU decomposition with partial pivoting
@@ -129,9 +129,9 @@ function solveAxb(A, b)
     return x
 end
 
-# Define matrix A and vector b
-A = [2 1 -1; -3 -1 2; -2 1 2]
-b = [8; -11; -3]
+
+A = [ 1 2 1 -1; 3 2 4 4; 4 4 3 4; 2 0 1 5]
+b = [1, 2, 3, 4]
 
 # Call solveAxb function
 x = solveAxb(A, b)
@@ -210,3 +210,7 @@ println(L_banded)
 println("U:")
 println(U_banded)
 
+# Approximately how  many floating point operations does each function require
+# 
+# tridiaglu: 6n - 6, complexity O(n)
+# bandedlu: 2n(p + q + 1)^2 , complexity O(n^2)
