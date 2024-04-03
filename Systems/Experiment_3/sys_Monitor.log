@@ -1,0 +1,230 @@
+[2024-04-02 14:07:13] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 14:07:13] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 14:07:13] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 14:07:13] (jonathanday) sys_Monitor.sh 
+[2024-04-02 14:07:13] (jonathanday) sys_Monitor.sh -endProcess 25324
+[2024-04-02 14:07:13] (jonathanday) sys_Monitor.sh -backup
+[2024-04-02 14:07:13] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 14:07:13] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 14:07:13] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 14:07:13] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 14:20:24] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 14:20:24] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 14:20:24] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 14:20:24] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 14:20:24] (jonathanday) sys_Monitor.sh -endProcess 25324
+[2024-04-02 14:20:24] (jonathanday) sys_Monitor.sh -backup
+[2024-04-02 14:20:24] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 14:20:24] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 14:20:24] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 14:20:24] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 14:22:08] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 14:22:08] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 14:22:08] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 14:22:08] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 14:22:08] (jonathanday) sys_Monitor.sh -endProcess 25324
+[2024-04-02 14:22:08] (jonathanday) sys_Monitor.sh -backup
+[2024-04-02 14:22:08] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 14:22:08] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 14:22:08] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 14:22:08] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 14:23:13] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 14:23:13] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 14:23:13] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 14:23:13] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 14:23:13] (jonathanday) sys_Monitor.sh -endProcess 25324
+[2024-04-02 14:23:13] (jonathanday) sys_Monitor.sh -backup
+[2024-04-02 14:23:13] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 14:23:13] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 14:23:13] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 14:23:14] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 14:27:52] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 14:27:52] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 14:27:52] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 14:27:52] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 14:27:52] (jonathanday) sys_Monitor.sh -endProcess 25324
+[2024-04-02 14:27:52] (jonathanday) sys_Monitor.sh -backup
+[2024-04-02 14:27:52] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 14:27:52] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 14:27:52] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 14:27:52] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 14:30:59] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 14:30:59] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 14:30:59] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 14:30:59] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 14:30:59] (jonathanday) sys_Monitor.sh -endProcess 25324
+[2024-04-02 14:30:59] (jonathanday) sys_Monitor.sh -backup
+[2024-04-02 14:30:59] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 14:30:59] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 14:30:59] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 14:30:59] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 14:33:30] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 14:33:30] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 14:33:31] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 14:33:31] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 14:33:31] (jonathanday) sys_Monitor.sh -endProcess 25324
+[2024-04-02 14:33:31] (jonathanday) sys_Monitor.sh -backup
+[2024-04-02 14:33:31] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 14:33:31] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 14:33:31] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 14:33:31] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 14:34:04] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 14:34:04] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 14:34:04] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 14:34:04] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 14:34:04] (jonathanday) sys_Monitor.sh -endProcess 25324
+[2024-04-02 14:34:04] (jonathanday) sys_Monitor.sh -backup
+[2024-04-02 14:34:04] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 14:34:04] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 14:34:04] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 14:34:04] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 14:36:21] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 14:36:21] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 14:36:22] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 14:36:22] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 14:36:22] (jonathanday) sys_Monitor.sh -endProcess 25324
+[2024-04-02 14:36:22] (jonathanday) sys_Monitor.sh -backup
+[2024-04-02 14:36:22] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 14:36:22] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 14:36:22] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 14:36:22] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 14:36:48] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 14:36:48] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 14:36:48] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 14:36:48] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 14:36:48] (jonathanday) sys_Monitor.sh -endProcess 25324
+[2024-04-02 14:36:48] (jonathanday) sys_Monitor.sh -backup
+[2024-04-02 14:36:48] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 14:36:48] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 14:36:48] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 14:36:48] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 22:15:55] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 22:15:55] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 22:15:55] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 22:15:55] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 22:15:55] (jonathanday) sys_Monitor.sh -endProcess 25324
+[2024-04-02 22:15:55] (jonathanday) sys_Monitor.sh -backup
+[2024-04-02 22:15:55] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 22:15:55] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 22:15:55] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 22:15:55] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 22:17:17] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 22:17:17] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 22:17:17] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 22:17:17] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 22:17:17] (jonathanday) sys_Monitor.sh -kill 25324
+[2024-04-02 22:17:17] (jonathanday) sys_Monitor.sh -backup
+[2024-04-02 22:17:17] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 22:17:17] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 22:17:17] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 22:17:17] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 22:19:09] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 22:19:09] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 22:19:09] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 22:19:09] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 22:19:09] (jonathanday) sys_Monitor.sh -kill 25324
+[2024-04-02 22:19:09] (jonathanday) sys_Monitor.sh -backup  
+[2024-04-02 22:19:09] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 22:19:09] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 22:19:09] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 22:19:09] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 22:19:29] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 22:19:29] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 22:19:30] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 22:19:30] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 22:19:30] (jonathanday) sys_Monitor.sh -kill 25324
+[2024-04-02 22:19:30] (jonathanday) sys_Monitor.sh -backup  
+[2024-04-02 22:19:30] (jonathanday) sys_Monitor.sh -dupes
+[2024-04-02 22:19:30] (jonathanday) sys_Monitor.sh -find sys_Monitor.sh
+[2024-04-02 22:19:30] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 22:19:30] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 22:20:34] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 22:20:34] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 22:20:35] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 22:20:35] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 22:20:35] (jonathanday) sys_Monitor.sh -kill 25324
+[2024-04-02 22:20:35] (jonathanday) sys_Monitor.sh -backup /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3/backup
+[2024-04-02 22:20:35] (jonathanday) sys_Monitor.sh -dupes /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3
+[2024-04-02 22:20:35] (jonathanday) sys_Monitor.sh -find /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 sys_Monitor.sh
+[2024-04-02 22:20:35] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 22:20:35] (jonathanday) sys_Monitor.sh -help
+[2024-04-02 22:27:39] (jonathanday) sys_Monitor.sh -disk
+[2024-04-02 22:27:39] (jonathanday) sys_Monitor.sh -mem
+[2024-04-02 22:27:39] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-02 22:27:39] (jonathanday) sys_Monitor.sh -procs
+[2024-04-02 22:27:39] (jonathanday) sys_Monitor.sh -kill 25324
+[2024-04-02 22:27:39] (jonathanday) sys_Monitor.sh -backup /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3/backup
+[2024-04-02 22:27:39] (jonathanday) sys_Monitor.sh -dupes /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3
+[2024-04-02 22:27:39] (jonathanday) sys_Monitor.sh -find /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 sys_Monitor.sh
+[2024-04-02 22:27:39] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-02 22:27:39] (jonathanday) sys_Monitor.sh -help
+[2024-04-03 12:36:44] (jonathanday) sys_Monitor.sh -disk
+[2024-04-03 12:36:44] (jonathanday) sys_Monitor.sh -mem
+[2024-04-03 12:36:44] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-03 12:36:44] (jonathanday) sys_Monitor.sh -procs
+[2024-04-03 12:36:44] (jonathanday) sys_Monitor.sh -kill 25324
+[2024-04-03 12:36:44] (jonathanday) sys_Monitor.sh -backup /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3/backup
+[2024-04-03 12:36:44] (jonathanday) sys_Monitor.sh -dupes /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3
+[2024-04-03 12:36:44] (jonathanday) sys_Monitor.sh -find /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 sys_Monitor.sh
+[2024-04-03 12:36:44] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-03 12:36:44] (jonathanday) sys_Monitor.sh -help
+[2024-04-03 12:39:02] (jonathanday) sys_Monitor.sh -disk
+[2024-04-03 12:39:02] (jonathanday) sys_Monitor.sh -mem
+[2024-04-03 12:39:03] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-03 12:39:03] (jonathanday) sys_Monitor.sh -procs
+[2024-04-03 12:39:03] (jonathanday) sys_Monitor.sh -kill 25324
+[2024-04-03 12:39:03] (jonathanday) sys_Monitor.sh -backup /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3/backup
+[2024-04-03 12:39:03] (jonathanday) sys_Monitor.sh -dupes /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3
+[2024-04-03 12:39:03] (jonathanday) sys_Monitor.sh -find /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 sys_Monitor.sh
+[2024-04-03 12:39:03] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-03 12:39:03] (jonathanday) sys_Monitor.sh -help
+[2024-04-03 12:39:18] (jonathanday) sys_Monitor.sh -disk
+[2024-04-03 12:39:18] (jonathanday) sys_Monitor.sh -mem
+[2024-04-03 12:39:18] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-03 12:39:18] (jonathanday) sys_Monitor.sh -procs
+[2024-04-03 12:39:18] (jonathanday) sys_Monitor.sh -kill 25324
+[2024-04-03 12:39:18] (jonathanday) sys_Monitor.sh -backup /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3/backup
+[2024-04-03 12:39:18] (jonathanday) sys_Monitor.sh -dupes /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3
+[2024-04-03 12:39:18] (jonathanday) sys_Monitor.sh -find /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 sys_Monitor.sh
+[2024-04-03 12:39:18] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-03 12:39:18] (jonathanday) sys_Monitor.sh -help
+[2024-04-03 12:40:55] (jonathanday) sys_Monitor.sh -disk
+[2024-04-03 12:40:55] (jonathanday) sys_Monitor.sh -mem
+[2024-04-03 12:40:55] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-03 12:40:55] (jonathanday) sys_Monitor.sh -procs
+[2024-04-03 12:40:55] (jonathanday) sys_Monitor.sh -kill 25324
+[2024-04-03 12:40:55] (jonathanday) sys_Monitor.sh -backup /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3/backup
+[2024-04-03 12:40:55] (jonathanday) sys_Monitor.sh -dupes /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3
+[2024-04-03 12:40:55] (jonathanday) sys_Monitor.sh -find /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 sys_Monitor.sh
+[2024-04-03 12:40:55] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-03 12:40:55] (jonathanday) sys_Monitor.sh -help
+[2024-04-03 13:01:25] (jonathanday) sys_Monitor.sh -disk
+[2024-04-03 13:01:25] (jonathanday) sys_Monitor.sh -mem
+[2024-04-03 13:01:25] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-03 13:01:25] (jonathanday) sys_Monitor.sh -procs
+[2024-04-03 13:01:25] (jonathanday) sys_Monitor.sh -kill 25324
+[2024-04-03 13:01:25] (jonathanday) sys_Monitor.sh -backup /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3/backup
+[2024-04-03 13:01:25] (jonathanday) sys_Monitor.sh -dupes /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3
+[2024-04-03 13:01:25] (jonathanday) sys_Monitor.sh -find /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 sys_Monitor.sh
+[2024-04-03 13:01:25] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-03 13:01:25] (jonathanday) sys_Monitor.sh -help
+[2024-04-03 13:02:14] (jonathanday) sys_Monitor.sh -disk
+[2024-04-03 13:02:14] (jonathanday) sys_Monitor.sh -mem
+[2024-04-03 13:02:15] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-03 13:02:15] (jonathanday) sys_Monitor.sh -procs
+[2024-04-03 13:02:15] (jonathanday) sys_Monitor.sh -kill 25324
+[2024-04-03 13:02:15] (jonathanday) sys_Monitor.sh -backup /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3/backup
+[2024-04-03 13:02:15] (jonathanday) sys_Monitor.sh -dupes /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3
+[2024-04-03 13:02:15] (jonathanday) sys_Monitor.sh -find /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 sys_Monitor.sh
+[2024-04-03 13:02:15] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-03 13:02:15] (jonathanday) sys_Monitor.sh -help
+[2024-04-03 13:04:41] (jonathanday) sys_Monitor.sh -disk
+[2024-04-03 13:04:41] (jonathanday) sys_Monitor.sh -mem
+[2024-04-03 13:04:41] (jonathanday) sys_Monitor.sh -procs nvim
+[2024-04-03 13:04:41] (jonathanday) sys_Monitor.sh -procs
+[2024-04-03 13:04:42] (jonathanday) sys_Monitor.sh -kill 25324
+[2024-04-03 13:04:42] (jonathanday) sys_Monitor.sh -backup /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3/backup
+[2024-04-03 13:04:42] (jonathanday) sys_Monitor.sh -dupes /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3
+[2024-04-03 13:04:42] (jonathanday) sys_Monitor.sh -find /Users/jonathanday/documents/GitHub/spring-2024/Systems/Experiment_3 sys_Monitor.sh
+[2024-04-03 13:04:42] (jonathanday) sys_Monitor.sh -alertThreshold 85
+[2024-04-03 13:04:42] (jonathanday) sys_Monitor.sh -help

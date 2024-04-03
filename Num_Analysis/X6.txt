@@ -1,0 +1,97 @@
+Exploration: 3.4.3 (p.117)
+
+As will be seen in Part V, the nxn matrix
+
+A = [-2 1               ]
+    [  1 -2 1           ]
+    [      1 -2 1       ]
+    [        1 -2 1     ]
+    [          1 -2 1   ]
+    [            1 -2 1 ]
+    [               1 -2]
+
+is particularly useful when solving differential equations. Form this matrix for values of n ranging over several orders of magnitude (for example, powers of 2 or 10)
+and compute K_2(A) for each. Plot K_2(A) versus n, using logarithmic scales on both axes.
+
+Solution: 
+
+Concept Check 3.4.4 (p.119)
+
+1. What is the condition number of a square nonsingular matrix A, and what is the significance for solving Ax = b?
+
+Solution: The condtion number is measures the sensitivity of a matrix to small changes in input data. The equation for the condition number is: K(A) = ||A||* ||A^-1||.
+
+2. What is a geometric interpretation of the condition number?
+
+Solution: The geometric interpretation may be a graph which shows that a small change in input data: x shows a small change in output: y
+
+3. Which measure is more appropriate for determining whether a matrix is nearly singular: the determinant, or the condition number?
+
+Solution: The condition number is more appropriate, because the determinant is equal to 0 if and only if A is singular, the determinate may be very large but A
+may be very singular, there is no correlation between the derminant and whether a matrix is singular unless it is singular.
+
+4. Briefly describe, in words, the process of iterative refinement. When is it most effective?
+
+Solution: Iterative refinement is a process of improving the accuracy of a solution by making small adjustments per iteration. The algorithm computes the residual
+to update the solution with an estimate of its error.
+
+5. What is the benefit of scaling the equations in the system Ax = b, even though it does not change the solution?
+
+Solution: Scaling can help reduce the condition number of the matrix.
+
+Exercise 1b (p.120)
+
+consider the matrix A
+
+[1 1+E]
+[1-E 1]
+
+0 < E << 1
+
+Compute the LU decomposition of A. How small can E be for the double-precision floating-point representation of U to be singular?
+
+Solution:
+
+I used this julia script to calculate the threshold value of E:
+
+```julia
+
+using LinearAlgebra
+
+function find_singular_threshold()
+    E = floatmin(Float64)  # Start with the smallest positive normal floating-point number
+    while true
+        try
+            # Define the matrix A with the current value of E
+            A = [1 1+E; 1-E 1]
+
+            # Compute the LU decomposition of A
+            F = lu(A)
+
+            # Extract the upper triangular matrix U
+            U = F.U
+
+            # Check if U is singular
+            if det(U) == 0
+                println("Threshold reached: For E = $E, U is singular.")
+                return E
+            end
+        catch ex
+            println("Error: ", ex)
+            println("Threshold reached: For E = $E, U is singular.")
+            return E
+        end
+        # Increment E and continue
+        E *= 2
+    end
+end
+
+# Find the singular threshold
+threshold = find_singular_threshold()
+
+```
+
+output:
+Error: SingularException(2)
+Threshold reached: For E = 2.2250738585072014e-308, U is singular
+
