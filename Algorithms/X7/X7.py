@@ -9,6 +9,39 @@ For solution see Question_4.jpg for solution
 different graphs.
 """
 
+import time
+
+def test_algorithm_performance(algorithm, graphs):
+    """
+    Test the performance of a graph algorithm on different graphs.
+
+    Args:
+    algorithm: Function: The graph algorithm to test.
+               This function should take a graph represented as an adjacency matrix
+               and return the result of the algorithm.
+    graphs: List of 3-tuples: Each tuple contains the graph represented as an adjacency matrix,
+            the name of the graph, and any additional information about the graph.
+
+    Returns:
+    A dictionary containing the execution time of the algorithm on each graph.
+    """
+
+    results = {}
+
+    for graph, graph_name, additional_info in graphs:
+        start_time = time.time()
+        result = algorithm(len(graph), graph)
+        end_time = time.time()
+        execution_time = end_time - start_time
+        results[graph_name] = {
+            "execution_time": execution_time,
+            "result": result,
+            "additional_info": additional_info
+        }
+
+    return results
+
+
 
 def Prim(n, W):
     """
@@ -49,29 +82,6 @@ def Prim(n, W):
         mst_edges.append((i, j, minimum_weight))
 
     return mst_edges
-
-W = [
-    [0, 1, 3, float('inf'), float('inf')],
-    [1, 0, 3, 6, float('inf')],
-    [3, 3, 0, 4, 2],
-    [float('inf'), 6, 84, 0, 5],
-    [float('inf'), float('inf'), 2, 5, 0]
-]
-
-############################### output using Figure 4.3(a) #########################################
-# Minimum Spanning Tree Edges:
-# Starting vertex, Ending vertex, Weight
-# (0, 1, 1)
-# (0, 2, 3)
-# (2, 4, 2)
-# (2, 3, 4)
-####################################################################################################
-
-n = len(W)
-minimum_spanning_tree = Prim(n, W)
-print("Minimum Spanning Tree Edges (Prim's algo): \nStarting vertex, Ending vertex, Weight")
-for edge in minimum_spanning_tree:
-    print(edge)
 
 
 """
@@ -126,7 +136,7 @@ The process is completed. The resulting minimum spanning tree consists of the fo
 using different graphs.
 """
 
-def Kruskal(W, n):
+def Kruskal(n, W):
     """
     Determines the minimum spanning tree
 
@@ -168,26 +178,11 @@ def Kruskal(W, n):
     return mst_edges
 
 
-
-W = [
-    [0, 1, 3, float('inf'), float('inf')],
-    [1, 0, 3, 6, float('inf')],
-    [3, 3, 0, 4, 2],
-    [float('inf'), 6, 84, 0, 5],
-    [float('inf'), float('inf'), 2, 5, 0]
-]
-
-n = len(W)
-minimum_spanning_tree = Kruskal(W,n)
-print("Minimum Spanning Tree Edges (Kruskal's algo): \nStarting vertex, Ending vertex, Weight")
-for edge in minimum_spanning_tree:
-    print(edge)
-
 """
 14. Implement Dijkstra’s algorithm (Algorithm 4.3) on your system, and study its performance using different graphs.
 """
 
-def Dijkstra(W, n):
+def Dijkstra(n, W):
     """
     Determines the shortest paths from v1 to all other vertices in a weighted,
     directed graph.
@@ -240,19 +235,6 @@ def Dijkstra(W, n):
     return mst_edges
 
 
-W = [
-    [0, 1, 3, float('inf'), float('inf')],
-    [1, 0, 3, 6, float('inf')],
-    [3, 3, 0, 4, 2],
-    [float('inf'), 6, 84, 0, 5],
-    [float('inf'), float('inf'), 2, 5, 0]
-]
-
-n = len(W)
-minimum_spanning_tree = Dijkstra(W,n)
-print("Minimum Spanning Tree Edges (Dijkstra's algo): \nStarting vertex, Ending vertex, Weight")
-for edge in minimum_spanning_tree:
-    print(edge)
 
 """
 28. Decode each bit string using the binary code in Exercise 24. 
@@ -261,3 +243,77 @@ for edge in minimum_spanning_tree:
 (c) 11100100111101 -> (1*2^13)+(1*2^12)+(1*2^11)+(1*2^8)+(1*2^5)+(1*2^4)+(1*2^3)+(1*2^2)+(1*2^0) -> 8192 + 4096 + 2048 + 256 + 32 + 16 + 8 + 4 + 1 = 14,653
 (d) 1000010011100  -> 1*2^12 + 1*2^7 + 1*2^4 + 1*2^3 + 1*2^2 -> 4096 + 128 + 16 + 8 + 4 -> 4252
 """
+
+
+import random
+
+def create_graph(size):
+    graph = [[random.randint(0, 10) if i != j else 0 for j in range(size)] for i in range(size)]
+    for i in range(size):  # Iterate over rows
+        for j in range(size):  # Iterate over columns
+            if graph[i][j] == 0:
+                graph[i][j] = float('inf')
+    return graph
+
+
+graph_10x10 = create_graph(10)
+graph_20x20 = create_graph(20)
+graph_30x30 = create_graph(30)
+graph_50x50 = create_graph(50)
+graph_100x100 = create_graph(100)
+graph_200x200 = create_graph(200)
+graph_500x500 = create_graph(500)
+
+graphs = [
+    (graph_10x10, "Graph 1: 10x10", "10x10 graph"),
+    (graph_20x20, "Graph 2: 20x20", "20x20 graph"),
+    (graph_30x30, "Graph 3: 30x30", "30x30 graph"),
+    (graph_50x50, "Graph 4: 50x50", "50x50 graph"),
+    (graph_100x100, "Graph 5: 100x100", "100x100 graph"),
+    (graph_200x200, "Graph 6: 200x200", "200x200 graph"),
+    (graph_500x500, "Graph 7: 500x500", "500x500 graph")
+]
+
+# Define the algorithms you want to test
+algorithms = {
+    "Prim's Algorithm": Prim,
+    "Kruskal's Algorithm": Kruskal,
+    "Dijkstra's Algorithm": Dijkstra
+}
+
+# Test the performance of each algorithm on the specified graphs
+for algo_name, algo_func in algorithms.items():
+    print(f"Testing {algo_name}:")
+    results = test_algorithm_performance(algo_func, graphs)
+    for graph_name, data in results.items():
+        print(f"Graph: {graph_name}, Execution Time: {data['execution_time']:.6f} seconds")
+
+
+#################################TESTING OUTPUT######################################
+"""
+Testing Prim's Algorithm:
+Graph: Graph 1: 10x10, Execution Time: 0.000032 seconds
+Graph: Graph 2: 20x20, Execution Time: 0.000292 seconds
+Graph: Graph 3: 30x30, Execution Time: 0.001276 seconds
+Graph: Graph 4: 50x50, Execution Time: 0.008651 seconds
+Graph: Graph 5: 100x100, Execution Time: 0.125115 seconds
+Graph: Graph 6: 200x200, Execution Time: 1.930280 seconds
+Graph: Graph 7: 500x500, Execution Time: 73.479756 seconds
+Testing Kruskal's Algorithm:
+Graph: Graph 1: 10x10, Execution Time: 0.000035 seconds
+Graph: Graph 2: 20x20, Execution Time: 0.000084 seconds
+Graph: Graph 3: 30x30, Execution Time: 0.000124 seconds
+Graph: Graph 4: 50x50, Execution Time: 0.000335 seconds
+Graph: Graph 5: 100x100, Execution Time: 0.001395 seconds
+Graph: Graph 6: 200x200, Execution Time: 0.006034 seconds
+Graph: Graph 7: 500x500, Execution Time: 0.037782 seconds
+Testing Dijkstra's Algorithm:
+Graph: Graph 1: 10x10, Execution Time: 0.000022 seconds
+Graph: Graph 2: 20x20, Execution Time: 0.000053 seconds
+Graph: Graph 3: 30x30, Execution Time: 0.000108 seconds
+Graph: Graph 4: 50x50, Execution Time: 0.000280 seconds
+Graph: Graph 5: 100x100, Execution Time: 0.001077 seconds
+Graph: Graph 6: 200x200, Execution Time: 0.004045 seconds
+Graph: Graph 7: 500x500, Execution Time: 0.025385 seconds
+"""
+########################################################################################
