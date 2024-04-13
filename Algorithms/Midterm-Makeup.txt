@@ -1,0 +1,132 @@
+1. Give a rationale for studying algorithms.
+
+In my opinion the best reason to study algorithms is for efficentcy and optimization. By increacing these aspects even in problems not related to computer science we find better and faster ways of completing task
+
+2. Write a binary search algorithm and give its time complexity class using Big-O notation
+
+function binary_search(sorted_arr)
+
+  temp_arr = []
+
+  while target is not found
+    pointer = len(sorted_arr)/2
+    if target == sorted_arr[pointer]
+      return found
+    elif target < sorted_arr[pointer]
+      temp_arr = [: pointer]
+      binary_search(temp_arr)
+
+    elif target > sorted_arr[pointer]
+      temp_arr = [pointer :]
+      binary_search(temp_arr)
+
+  return -1 
+
+The Big O time complexity class of this algorithms is O(logn)
+
+3. Write the merge sort algorithm and give the every-case time complexity function (not Big-O)
+
+function mergesort(array)
+  result = []
+  n = len(array)
+  if n > 1
+    mid = n/2
+    left = array[: mid]
+    right = array[mid :]
+
+    mergesort(left)
+    mergesort(right)
+
+    result = merge(left, right)
+      
+    return result
+
+
+4. State the following definitions given the complexity function f(n):
+
+(a). Omega(f(n))
+
+This represents the Best Case for a function, it describes at least, the amount of time it takes for an algorithm to run, time complexity wise
+
+(b). Theta(f(n))
+
+This is a more precise measurement. Big theta provides both an upper and lower bound for an algorithm
+
+5. Sort these functions in increasing time complexity. List your answer using the corresponding letters, in order from left to right, for example: e,b,a,d,e,f
+(a). logn
+(b). n^2.81
+(c). n logn
+(d). n^log_3(8)
+(e). n!
+(f). 5^n
+
+
+Solution least to greatest time complexity: a,c,d,b,f,e
+
+6. State the master method, then apply it to T(n) = 8T(n/4) + 5n^2.
+
+Master Method: T(n) = aT(n/b) + f(n)
+If T(n) = aT(n/b)+O(n^d) is a non-decreasing complexity function then,
+
+T(n) is an element of:
+theta(n^d) if d >  logb(a)
+theta(n^d logn) if d = logb(a)
+theat(n^logb(a)) if d < logb(a)
+
+For this equation, a=8, b=4, d=2
+log4(8) = 3/2 = 1.5
+d=2, 2>1.5, Therefore, T(n) is an element of theta(n^2)
+
+7. Solve the recurrence equation: t_n = 3t_n-1 + 4t_n-2 for n > 1 with initial conditions t_0 = 0 and t_1 = 1
+
+Characteristic equation: r^n = 3r^-1 + 4r^n-2
+= r^n - 3r - 4 = 0
+= r^2 -3r -4 = 0
+
+solve for roots
+r^n - 3r^n-1 -4r^n-2 = 0
+r1 = 4 r2 = -1
+
+general solution: tn = A*4 + B*(-1)^n
+
+initial conditions
+t0 = A*4^0 + B*(-1)^0 = A+B=0
+t1 = A*4^1 + B*(-1)^1 = 4A - B = 1
+
+A = 1/3 B = -1/3
+
+final solution: tn = 1/3 * 4^n - 1/3 * 21(-1)^n
+
+8. Verify tn = n+1 is a solution of tn = t_n-1 + 1 and t0 = 0
+
+Proof: t0 = 0 by induction we can assume true for n,
+then for n+1 we have tn = t_n-1 + 1,
+tn = n + 1
+n + 1 = (n - 1) + 1
+t1 = t0 + 1 = 0 + 1 = 1
+
+Therefore for all numbers > 0, for this relation, tn = n+1
+
+
+9. Solve the recurrence relation tn = t_n-1 + n for n >= 1 with t1 = 1.
+
+t1 = 1
+t2 = 3
+t3 = 6
+t4 = 10
+t5 = 15
+
+tn = 1+2+3+...+n
+
+Summation (n, i=1) i = n(n+1)/2
+
+solution: tn = n(n+1)/2
+
+
+10. Show that f(n) = 2n^5 + 3n^2 + 18 is an element of big Theta(n^5)
+
+2n^5 + 3n^2 + 18 is an element of big Theta(n^5) because 2n^5 <= 2n^5 + 3n^2 + 18 <= 3n^5 for all n >= 1
+
+f(0) = 0 < 18 > 0
+f(1) = 1 < 20 < 243
+f(2) = 1,024 < 1,078 < 7,776

@@ -36,7 +36,8 @@ def Prim(n, W):
         minimum_weight = float('inf')
         minimum_edge = None
         
-        #Loop through mst check the values in the mst to see if there are lesser values in the graph
+        # Loop through mst check the values in the mst to see if there are 
+        # lesser values in the graph
         for i in mst:
             for j in range(n):
                 if j not in mst and W[i][j] < minimum_weight:
