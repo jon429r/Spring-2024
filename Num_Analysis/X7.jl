@@ -2,16 +2,8 @@
 using MatrixDepot
 using LinearAlgebra
 
-# A = md.A
-
-# md = [2 1; 1 2]
 md = [4 1 -1; 2 7 1; 1 -3 12]
 b1 = [19;3;31]
-
-# md = rand(1:100, 10, 10)
-
-# md = mdopen("HB/abb313")
-# md = md.A
 
 
 ############Exploration 5.1.2####################
@@ -52,10 +44,13 @@ end
 n = length(md)
 b = zeros(n) 
 tol = 1e-6
-x, iterations = jacobi(md, b1, tol)
+elapsed_time = @elapsed begin
+    x, iterations = jacobi(md, b1, tol)
+end
 
 println("Solution vector x (jacobi): ", x)
 println("Number of iterations (jacobi): ", iterations)
+println("Time elapsed: ", elapsed_time)
 
 #####################################################
 
@@ -103,9 +98,9 @@ function gauss_seidel(A,b,tol)
 
     while error > tol && iterations < 1000
         for i in 1:n
-            sum1 = dot(A[i, 1:i-1], x_new[1:i-1])  # Compute the sum of previous updated values
-            sum2 = dot(A[i, i+1:n], x[i+1:n])  # Compute the sum of current values
-            x_new[i] = (b[i] - sum1 - sum2) / A[i, i]  # Update the current variable
+            sum1 = dot(A[i, 1:i-1], x_new[1:i-1])  
+            sum2 = dot(A[i, i+1:n], x[i+1:n]) 
+            x_new[i] = (b[i] - sum1 - sum2) / A[i, i] 
         end
 
         error = norm(x_new - x)
@@ -116,21 +111,23 @@ function gauss_seidel(A,b,tol)
     end
 
     return x, iterations
-
 end
 
 n = length(md)
 b = zeros(n) 
 tol = 1e-6
-x, iterations = gauss_seidel(md, b1, tol)
+elapsed_time = @elapsed begin
+    x, iterations = gauss_seidel(md, b1, tol)
+end
 
 println("Solution vector x (guass-seidel): ", x)
 println("Number of iterations (guass-seidel): ", iterations)
+println("Time elapsed: ", elapsed_time)
+
 
 ################################################
 
 ################Exploration 5.1.9###################
-
 
 function SOR(A, b, w, tol)
     n = size(A, 1)
@@ -156,22 +153,23 @@ function SOR(A, b, w, tol)
     return x, iterations
 end
 
-n = length(md)
-b = zeros(n) 
+b = [0;0;0]
 tol = 1e-6
 
 for w in 0.25:0.25:2.0
     println("Value for w ", w)
-    x, iterations = SOR(md, b1, w, tol)
+    elapsed_time = @elapsed begin
+        x, iterations = SOR(md, b1, w, tol)
+    end
 
     println("Solution vector x (SOR): ", x)
     println("Number of iterations (SOR): ", iterations)
+    println("Elapsed time (SOR): ", elapsed_time)
 end
 
 ######################################################
 
 ################Exploration 5.2.4###################
-
 
 function steepest_descent(A, b, x0, tol)
     n = length(b)
@@ -189,11 +187,29 @@ function steepest_descent(A, b, x0, tol)
     return x, iterations
 end
 
-x0 = zeros(3) 
+A1 = [2 1; 1 2]
+A2 = [4 2; 2 1]
+
+b1 =  [1; 2]
+x0 = [0;0]
+
 tol = 1e-6  
-x_sd, iterations_sd = steepest_descent(md, b1, x0, tol)
+elapsed_time = @elapsed begin
+    x_sd, iterations_sd = steepest_descent(A1, b1, x0, tol)
+end
 
 println("Solution vector x (Steepest Descent): ", x_sd)
 println("Number of iterations (Steepest Descent): ", iterations_sd)
+println("elapsed time (steepest_descent) ", elapsed_time)
+
+elapsed_time = @elapsed begin
+    x_sd, iterations_sd = steepest_descent(A2, b1, x0, tol)
+end
+
+println("Solution vector x (Steepest Descent): ", x_sd)
+println("Number of iterations (Steepest Descent): ", iterations_sd)
+println("elapsed time (steepest_descent) ", elapsed_time)
 
 #######################################################
+
+
