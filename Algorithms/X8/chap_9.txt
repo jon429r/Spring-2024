@@ -1,0 +1,28 @@
+PAGE 455
+
+1. List three problems that have polynomial-time algorithms. Justify your answer.
+
+Solution
+Mergesort, this algorithm has a time complexity of O(nlogn), Binarysearch this algorithm has a time complexity of O(logn), Bubblesort 
+which has a time complexity of O(n^2). In all these algorithms their order has n which relates to the amount of items in the given list. 
+Because of this they are regarded to as polynomial time algorithms.
+
+
+4. In which of the three general categories discussed in Section 9.3 does the problem of computing the nth Fibonacci term belong?
+Justify your answer.
+
+Problems where polynomial-time algorithms have been found. This is because there exists a polynomial-time algorithm for this problem. This algorithm has a linear time complexity which is O(n) n being the number of items in a set making it polynomial-time.
+
+6. List at least two problems that belong in each of the three general categories discussed in Section 9.3.
+
+Problems for Which Polynomial-Time Algorithms Have Been Found:
+Sorting: Problems related to sorting, such as sorting a list of integers or sorting strings
+Shortest Paths: Finding the shortest path between two vertices in a graph
+
+Problems That Have Been Proven to Be Intractable:
+Hamiltonian Circuits: Determining whether a given graph contains a Hamiltonian circuit
+Halting Problem: Determining whether a given program, when executed with a given input, will eventually halt or run indefinitely.
+
+Problems That Have Not Been Proven to Be Intractable but for Which Polynomial-Time Algorithms Have Never Been Found:
+Traveling Salesperson Problem: Finding the shortest possible route that visits each city exactly once and returns to the original city.
+Knapsack Problem: Determining the maximum value of items that can be put in a bag without going a certain weight

@@ -85,31 +85,5 @@ void* consumer(void* arg)
 
 
 /* 
-** Run the producer-consumer setup 20 times
-** Create producer and consumer threads with their respective IDs
-** Wait for the producer and consumer threads to finish 
-*/
-int main()
-{
-    for (int i = 0; i < 20; i++)
-    {
-        int producer_id = (i % 2) + 1;
-        int consumer_id = ((i / 2) % 2) + 1;
-        
-        pthread_t producer_thread;
-        pthread_t consumer_thread;
-
-        ThreadArgs* producer_args = (ThreadArgs*)malloc(sizeof(ThreadArgs));
-        producer_args->producer_id = producer_id;
-        pthread_create(&producer_thread, NULL, producer, (void*)producer_args);
-
-        ThreadArgs* consumer_args = (ThreadArgs*)malloc(sizeof(ThreadArgs));
-        consumer_args->consumer_id = consumer_id;
-        pthread_create(&consumer_thread, NULL, consumer, (void*)consumer_args);
-
-        pthread_join(producer_thread, NULL);
-        pthread_join(consumer_thread, NULL);
-    }
-
     return 0;
 }
